@@ -11,6 +11,7 @@ If you want to run this project folder. Just do:
 
 Then skip to [Step 6](step6).
 
+If GoogleMaps won't run, try to reinstall the plugin and run it again.
 
 
 
@@ -73,6 +74,41 @@ ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROI
 
 Make sure you replace with `...` with your API key that you got in step 1. You can use same API
 for both Android and iOS.
+
+
+Go to your `app.module.ts` and add `GoogleMaps`.
+
+
+```angular2
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
+
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+
+import { GoogleMaps } from '@ionic-native/google-maps';
+
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    GoogleMaps,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 
 
 ## Step 5: Code Time :)

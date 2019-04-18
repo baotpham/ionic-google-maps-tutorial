@@ -36,6 +36,7 @@ export class HomePage implements OnInit {
 
 
   loadMap() {
+
     const mapOptions: GoogleMapOptions = {
       mapType: GoogleMapsMapTypeId.NORMAL,
       gestures: {
