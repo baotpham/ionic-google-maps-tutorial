@@ -4,11 +4,14 @@ In this tutorial, you will learn how to set up Google Maps in Ionic 4.
 
 I will assume that you know the basics of `Ionic`.
 
+Also, follow this tutorial in a separate project. This folder contains a working project.
+If you want to run this project folder. Just do:
 
-```$xslt
-Requirement:
-Ionic 4
-```
+`npm i`
+
+Then skip to [Step 6](step6).
+
+
 
 
 ## Step 1: Set up
@@ -135,7 +138,8 @@ export class HomePage {
 
 Now, we are going to write code that we create our map.
 
-In Angular, there is something called `lifecycle`. You can read more about it (here)[https://angular.io/guide/lifecycle-hooks].
+In Angular, there is something called `lifecycle`. You can read more about it 
+[here](https://angular.io/guide/lifecycle-hooks).
 
 In our project, we will use `ngOnInit()` from Angular lifecycle. This method will automatically be called when the
 user first enters the page. In order to use this method, we need to implement `OnInit` interface. You should have:
@@ -265,7 +269,7 @@ Now, open `home.page.html`. We will add the `map_canvas` element. Make sure you 
 ``` 
 
 
-## Step 6: Run Time :)
+## Step 6: Run Time :) <a name="step6"></a>
 
 Since GoogleMaps will only work with native platforms, `ionic serve` will not work properly. 
 
