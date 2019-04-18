@@ -5,13 +5,22 @@ In this tutorial, you will learn how to set up Google Maps in Ionic 4.
 I will assume that you know the basics of `Ionic`.
 
 Also, follow this tutorial in a separate project. This folder contains a working project.
+
+
+## Run this folder
 If you want to run this project folder. Just do:
 
 `npm i`
 
-Then skip to [Step 6](step6).
+Then go to [Step 2](step2) to get Google Maps API and run:
 
-If GoogleMaps won't run, try to reinstall the plugin and run it again.
+```
+npm install @ionic-native/core@beta @ionic-native/google-maps@beta
+
+ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="..." --variable API_KEY_FOR_IOS="..."
+```
+
+Then go to [Step 6](step6).
 
 
 
@@ -37,7 +46,7 @@ Also, let's open this project in your favorite editors. These are the choices yo
 * Webstorm (it is free for students. this is my personal favorite :D )
 
 
-## Step 2: Get Google Maps API Key
+## Step 2: Get Google Maps API Key<a name="step2"></a>
 
 In order to use Google services, we will need an API key. Since Google has detailed documentation on this,
 I will not go in details for this. You can find the documentation [here](https://developers.google.com/maps/documentation/javascript/get-api-key).
