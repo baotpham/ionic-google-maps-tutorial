@@ -1,4 +1,4 @@
-#Google Maps in Ionic 4
+# Google Maps in Ionic 4
 
 In this tutorial, you will learn how to set up Google Maps in Ionic 4. 
 
@@ -11,7 +11,7 @@ Ionic 4
 ```
 
 
-##Step 1: Set up
+## Step 1: Set up
 Open your terminal and go to the directory that you want to save this project under.
 
 Let's create a blank Ionic project using this command below:
@@ -33,14 +33,14 @@ Also, let's open this project in your favorite editors. These are the choices yo
 * Webstorm (it is free for students. this is my personal favorite :D )
 
 
-##Step 2: Get Google Maps API Key
+## Step 2: Get Google Maps API Key
 
 In order to use Google services, we will need an API key. Since Google has detailed documentation on this,
 I will not go in details for this. You can find the documentation [here](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 
 
-##Step 3: Install Node and npm
+## Step 3: Install Node and npm
 
 To install all the plugins in this project, we will use `npm` which is a package manager. In order to use `npm`, you
 need to install `Node.js`. You can install it through its website [here](https://nodejs.org/en/).
@@ -56,7 +56,7 @@ If not, please see a TA for help!
 
 
 
-##Step 4: Install Google Maps Plugin
+## Step 4: Install Google Maps Plugin
 
 Go back to your terminal window. <b>Make sure you are in the project directory</b>.
 
@@ -72,7 +72,7 @@ Make sure you replace with `...` with your API key that you got in step 1. You c
 for both Android and iOS.
 
 
-##Step 5: Code Time :)
+## Step 5: Code Time :)
 
 Open `home.page.ts` in your project. This file acts like a controller for your home page.
 
@@ -265,7 +265,7 @@ Now, open `home.page.html`. We will add the `map_canvas` element. Make sure you 
 ``` 
 
 
-##Step 6: Run Time :)
+## Step 6: Run Time :)
 
 Since GoogleMaps will only work with native platforms, `ionic serve` will not work properly. 
 
@@ -282,7 +282,7 @@ You should see something like this:
 ![alt text](./src/assets/google-maps.png "Example")
 
 
-##Conclusion:
+## Conclusion:
 
 In this project, I also added a button on top right that we relocate back to where we marked. So check it out. 
 
